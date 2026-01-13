@@ -80,8 +80,8 @@ vercel --prod
 4. Select folder: `/ (root)`
 5. Save and your site will be available at `https://username.github.io/repository-name`
 
-# Azure Storage Static Web
-1. Create storage account
+### Azure Storage Static Web
+1. Go to Azure portal and create storage account
 2. Go to storage account on Azure portal, open menu Static website, then Enbale Static Website, name index and error page (usually index.html and error.html)
 3. Open menu Container, open $web, then upload or static material (must include index.html)
 4. Open menu Front Door and CDN, create new Azure Front Door instance

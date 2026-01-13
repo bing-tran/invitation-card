@@ -1,0 +1,82 @@
+# =================================================
+# OS files
+# =================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# =================================================
+# Editor / IDE
+# =================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.log
+
+# =================================================
+# Node / Package managers
+# =================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# =================================================
+# Build outputs (ALL common tools)
+# =================================================
+dist/
+build/
+out/
+public/build/
+coverage/
+
+# =================================================
+# Framework caches
+# =================================================
+.cache/
+.parcel-cache/
+.vite/
+.next/
+.nuxt/
+.svelte-kit/
+
+# =================================================
+# Hosting platform files
+# =================================================
+# Netlify
+.netlify/
+
+# Vercel
+.vercel/
+
+# Azure Static Web Apps
+.swa/
+
+# =================================================
+# Environment variables / secrets
+# =================================================
+.env
+.env.*
+!.env.example
+
+# =================================================
+# Temporary / backup files
+# =================================================
+*.tmp
+*.temp
+*.bak
+*.old
+
+# =================================================
+# Optional: lock files (comment OUT if you want them)
+# =================================================
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
