@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Bing & Ánh - Save the Date</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bing & Ánh invited you to the wedding ceremony and celebration of our marriage" />
+    <meta property="image" content="https://www.binganh.one/assets/images/preview_bgr.jpeg" />
+
+    <meta property="og:title" content="Bing & Ánh - Save the Date" />
+    <meta property="og:description" content="Bing & Ánh invited you to the wedding ceremony and celebration of our marriage" />
+    <meta property="og:image" content="https://www.binganh.one/assets/images/preview_bgr.jpeg" />
+    <meta property="og:url" content="https://www.binganh.one" />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+    <!-- Material Symbols (mail) favicon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
+    <link rel="icon" type="image/svg+xml"
+        href="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/mail/default/24px.svg">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- html2canvas library for saving as image -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+
+<body>
+
+    <div class="invitation-container">
+        <!-- LEFT PANEL - Monogram -->
+        <div class="panel panel-left">
+            <!-- Save the Date Text -->
+            <div class="save-the-date">Save The Date</div>
+            
+            <!-- Floral Decorations -->
+            <div class="floral-decoration floral-monogram-top"></div>
+            <div class="floral-decoration floral-monogram-left"></div>
+            <div class="floral-decoration floral-monogram-bottom"></div>
+            <div class="floral-decoration floral-monogram-top-right"></div>
+        </div>
+
+        <!-- RIGHT PANEL - Invitation Details -->
+        <div class="panel panel-right">
+            <!-- Floral Decorations -->
+            <div class="floral-decoration floral-top-left"></div>
+            <div class="floral-decoration floral-bottom-right"></div>
+            <div class="floral-decoration floral-left-middle"></div>
+
+            <div class="content">
+                <div class="section-label">THE WEDDING CELEBRATION OF</div>
+
+                <div class="names-container">
+                    <div class="name">Bing</div>
+                    <div class="ampersand">&</div>
+                    <div class="name">Ánh</div>
+                </div>
+
+                <p class="invitation-text">
+                    Invite you to the ceremony<br />
+                    and celebration of our marriage
+                </p>
+
+                <div class="date-section">
+                    <div class="section-label">DATE</div>
+                    <div class="date-value">24 JANUARY 2026</div>
+                    <div class="time-value">AT 06:30 PM</div>
+                </div>
+
+                <div class="venue-section">
+                    <div class="section-label">VENUE</div>
+                    <div class="venue-name">LẠC THÁI RESTAURANT</div>
+                    <div class="venue-details">
+                        48 Xuân Thuỷ Street<br />
+                        An Khánh Ward<br />
+                        Ho Chi Minh City
+                    </div>
+                </div>
+
+                <button class="save-image-btn" id="saveImageBtn">
+                    Save this as Image
+                </button>
+            </div>
+        </div>
+
+        <!-- THIRD PANEL - Dress Code Summary -->
+        <div class="panel panel-dress">
+            <div class="content">
+                <div class="dress-header">Dress Code</div>
+                <div class="dress-subtitle">White · Pink · Blue · Soft Navy</div>
+
+                <div class="dress-palette">
+                    <div class="dress-chip">
+                        <span class="dress-dot white-main"></span>
+                        White
+                    </div>
+                    <div class="dress-chip">
+                        <span class="dress-dot white-ivory"></span>
+                        Ivory
+                    </div>
+                    <div class="dress-chip">
+                        <span class="dress-dot sage-green"></span>
+                        Sage Green
+                    </div>
+                    <div class="dress-chip">
+                        <span class="dress-dot pink-light"></span>
+                        Light Pink
+                    </div>
+                    <div class="dress-chip">
+                        <span class="dress-dot pink-blush"></span>
+                        Blush Pink
+                    </div>
+                    <div class="dress-chip">
+                        <span class="dress-dot blue-light"></span>
+                        Light Blue
+                    </div>
+                    <div class="dress-chip">
+                        <span class="dress-dot blue-powder"></span>
+                        Powder Blue
+                    </div>
+                    <div class="dress-chip">
+                        <span class="dress-dot blue-dusty"></span>
+                        Dusty Blue
+                    </div>
+                    <div class="dress-chip">
+                        <span class="dress-dot navy-soft"></span>
+                        Soft Navy
+                    </div>
+                </div>
+
+                <p class="dress-note">
+                    Kindly choose outfits within this palette for a soft, romantic atmosphere.
+                    <strong>Avoid bright neon or very dark colors</strong> outside the navy family.
+                </p>
+
+                <a class="dress-link" href="./dress.html" target="_blank" rel="noopener">
+                    <span class="material-symbols-outlined">palette</span>
+                    View full dress code palette
+                </a>
+
+                <div class="dress-qr">
+                    <div class="dress-qr-box">
+                        <!-- Replace src with your actual registration QR image -->
+                        <img src="./assets/images/registration-qr.png" alt="QR code for wedding registration">
+                    </div>
+                    <div class="dress-qr-label">Scan for <a href="https://forms.gle/prrod9GbesshN4s76" target="_blank" rel="noopener">registration</a>, please</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('saveImageBtn').addEventListener('click', function() {
+            const button = this;
+            const originalText = button.innerHTML;
+            
+            // Show loading state
+            button.disabled = true;
+            button.innerHTML = 'Saved this as Image';
+            
+            const invitationContainer = document.querySelector('.invitation-container');
+            
+            html2canvas(invitationContainer, {
+                backgroundColor: '#f4f2ef',
+                scale: 2,
+                useCORS: true,
+                logging: false,
+                width: invitationContainer.offsetWidth,
+                height: invitationContainer.offsetHeight
+            }).then(function(canvas) {
+                // Create download link
+                const link = document.createElement('a');
+                link.download = 'binganh-save-the-date.png';
+                link.href = canvas.toDataURL('image/png');
+                
+                // Trigger download
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                
+                // Reset button
+                button.disabled = false;
+                button.innerHTML = originalText;
+            }).catch(function(error) {
+                console.error('Error saving image:', error);
+                alert('Sorry, there was an error saving the image. Please try again.');
+                button.disabled = false;
+                button.innerHTML = originalText;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
