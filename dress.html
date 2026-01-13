@@ -13,6 +13,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
     rel="stylesheet">
+  <!-- Translation scripts -->
+  <script src="./assets/js/translations.js"></script>
+  <script src="./assets/js/i18n.js"></script>
 
   <style>
     * {
@@ -328,33 +331,32 @@
 
     <div class="page-inner">
       <header>
-        <div class="eyebrow">Dress Code</div>
-        <h1>Color Palette</h1>
-        <div class="couple">for the wedding of Bing & Ánh</div>
-        <div class="subtitle">White · Pink · Blue · Soft Navy</div>
+        <div class="eyebrow" data-i18n="dress-code-title">Dress Code</div>
+        <h1 data-i18n="color-palette">Color Palette</h1>
+        <div class="couple"><span data-i18n="for-the-wedding-of">for the wedding of</span> Bing & Ánh</div>
+        <div class="subtitle" data-i18n="white-pink-blue-soft-navy">White · Pink · Blue · Soft Navy</div>
       </header>
 
       <p class="intro">
-        We kindly invite you to dress within this soft, romantic palette so that everyone looks
-        beautiful together in the photos.
-        <strong>Please avoid very bright neons or colors outside these tones.</strong>
+        <span data-i18n="dress-intro">We kindly invite you to dress within this soft, romantic palette so that everyone looks beautiful together in the photos.</span>
+        <strong><span data-i18n="dress-intro-strong">Please avoid very bright neons or colors outside these tones.</span></strong>
       </p>
 
       <div class="legend">
         <div class="legend-item">
-          <span class="legend-dot white-main"></span> Light
+          <span class="legend-dot white-main"></span> <span data-i18n="light">Light</span>
         </div>
         <div class="legend-item">
-          <span class="legend-dot white-ivory"></span> Ivory
+          <span class="legend-dot white-ivory"></span> <span data-i18n="ivory">Ivory</span>
         </div>
         <div class="legend-item">
-          <span class="legend-dot pink-main"></span> Soft Pinks
+          <span class="legend-dot pink-main"></span> <span data-i18n="soft-pinks">Soft Pinks</span>
         </div>
         <div class="legend-item">
-          <span class="legend-dot blue-main"></span> Light &amp; Powder Blues
+          <span class="legend-dot blue-main"></span> <span data-i18n="light-powder-blues">Light &amp; Powder Blues</span>
         </div>
         <div class="legend-item">
-          <span class="legend-dot navy-main"></span> Soft Navy Accents
+          <span class="legend-dot navy-main"></span> <span data-i18n="soft-navy-accents">Soft Navy Accents</span>
         </div>
       </div>
 
@@ -362,28 +364,28 @@
         <!-- White Section -->
         <section class="section-card white-section">
           <div class="section-header">
-            <div class="section-title">White</div>
-            <div class="section-tag">Base tones</div>
+            <div class="section-title" data-i18n="white">White</div>
+            <div class="section-tag" data-i18n="base-tones">Base tones</div>
           </div>
           <div class="swatches">
             <div class="swatch">
               <div class="color"></div>
               <div class="label">
-                <strong>White</strong>
+                <strong data-i18n="white">White</strong>
                 <span class="hex">#FFFFFF</span>
               </div>
             </div>
             <div class="swatch">
               <div class="color"></div>
               <div class="label">
-                <strong>Ivory</strong>
+                <strong data-i18n="ivory">Ivory</strong>
                 <span class="hex">#EFE6D4</span>
               </div>
             </div>
             <div class="swatch">
               <div class="color"></div>
               <div class="label">
-                <strong>Sage Green</strong>
+                <strong data-i18n="sage-green">Sage Green</strong>
                 <span class="hex">#CAD18D</span>
               </div>
             </div>
@@ -393,35 +395,35 @@
         <!-- Pink Section -->
         <section class="section-card pink-section">
           <div class="section-header">
-            <div class="section-title">Pink</div>
-            <div class="section-tag">Soft &amp; blush tones</div>
+            <div class="section-title" data-i18n="pink">Pink</div>
+            <div class="section-tag" data-i18n="soft-blush-tones">Soft &amp; blush tones</div>
           </div>
           <div class="swatches">
             <div class="swatch">
               <div class="color"></div>
               <div class="label">
-                <strong>Light Pink</strong>
+                <strong data-i18n="light-pink">Light Pink</strong>
                 <span class="hex">#FFB6C1</span>
               </div>
             </div>
             <div class="swatch">
               <div class="color"></div>
               <div class="label">
-                <strong>Blush Pink</strong>
+                <strong data-i18n="blush-pink">Blush Pink</strong>
                 <span class="hex">#F4C2C2</span>
               </div>
             </div>
             <div class="swatch">
               <div class="color"></div>
               <div class="label">
-                <strong>Pale Pink</strong>
+                <strong data-i18n="pale-pink">Pale Pink</strong>
                 <span class="hex">#FADADD</span>
               </div>
             </div>
             <div class="swatch">
               <div class="color"></div>
               <div class="label">
-                <strong>Soft Pink</strong>
+                <strong data-i18n="soft-pink">Soft Pink</strong>
                 <span class="hex">#F6C1CC</span>
               </div>
             </div>
@@ -431,28 +433,28 @@
         <!-- Blue Section -->
         <section class="section-card blue-section">
           <div class="section-header">
-            <div class="section-title">Blue</div>
-            <div class="section-tag">Airy &amp; dusty blues</div>
+            <div class="section-title" data-i18n="blue">Blue</div>
+            <div class="section-tag" data-i18n="airy-dusty-blues">Airy &amp; dusty blues</div>
           </div>
           <div class="swatches">
             <div class="swatch">
               <div class="color"></div>
               <div class="label">
-                <strong>Light Blue</strong>
+                <strong data-i18n="light-blue">Light Blue</strong>
                 <span class="hex">#ADD8E6</span>
               </div>
             </div>
             <div class="swatch">
               <div class="color"></div>
               <div class="label">
-                <strong>Powder Blue</strong>
+                <strong data-i18n="powder-blue">Powder Blue</strong>
                 <span class="hex">#E6F2FA</span>
               </div>
             </div>
             <div class="swatch">
               <div class="color"></div>
               <div class="label">
-                <strong>Dusty Blue</strong>
+                <strong data-i18n="dusty-blue">Dusty Blue</strong>
                 <span class="hex">#839EC1</span>
               </div>
             </div>
@@ -462,14 +464,14 @@
         <!-- Navy Section -->
         <section class="section-card navy-section">
           <div class="section-header">
-            <div class="section-title">Soft Navy</div>
-            <div class="section-tag">For accents</div>
+            <div class="section-title" data-i18n="soft-navy">Soft Navy</div>
+            <div class="section-tag" data-i18n="for-accents">For accents</div>
           </div>
           <div class="swatches">
             <div class="swatch">
               <div class="color"></div>
               <div class="label">
-                <strong>Soft Navy</strong>
+                <strong data-i18n="soft-navy">Soft Navy</strong>
                 <span class="hex">#1F2A44</span>
               </div>
             </div>
@@ -478,10 +480,9 @@
       </div>
 
       <footer>
-        This palette is a gentle guideline – please feel free to choose any outfit you feel beautiful and
-        comfortable in.<br />
-        Return to the invitation:
-        <a href="./index.html">Bing &amp; Ánh – Save the Date</a>
+        <span data-i18n="dress-footer">This palette is a gentle guideline – please feel free to choose any outfit you feel beautiful and comfortable in.</span><br />
+        <span data-i18n="return-to-invitation">Return to the invitation:</span>
+        <a href="./index.html" data-i18n="save-the-date-link">Bing &amp; Ánh – Save the Date</a>
       </footer>
     </div>
   </div>
