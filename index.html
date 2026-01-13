@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <!-- html2canvas library for saving as image -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <!-- Translation scripts -->
+    <script src="./assets/js/translations.js"></script>
+    <script src="./assets/js/i18n.js"></script>
 </head>
 
 <body>
@@ -36,7 +39,7 @@
         <!-- LEFT PANEL - Monogram -->
         <div class="panel panel-left">
             <!-- Save the Date Text -->
-            <div class="save-the-date">Save The Date</div>
+            <div class="save-the-date" data-i18n="save-the-date">Save The Date</div>
             
             <!-- Floral Decorations -->
             <div class="floral-decoration floral-monogram-top"></div>
@@ -53,7 +56,7 @@
             <div class="floral-decoration floral-left-middle"></div>
 
             <div class="content">
-                <div class="section-label">THE WEDDING CELEBRATION OF</div>
+                <div class="section-label" data-i18n="the-wedding-celebration-of">THE WEDDING CELEBRATION OF</div>
 
                 <div class="names-container">
                     <div class="name">Bing</div>
@@ -62,27 +65,27 @@
                 </div>
 
                 <p class="invitation-text">
-                    Invite you to the ceremony<br />
-                    and celebration of our marriage
+                    <span data-i18n="invite-you-to">Invite you to the ceremony</span><br />
+                    <span data-i18n="and-celebration-of-our-marriage">and celebration of our marriage</span>
                 </p>
 
                 <div class="date-section">
-                    <div class="section-label">DATE</div>
-                    <div class="date-value">24 JANUARY 2026</div>
-                    <div class="time-value">AT 06:30 PM</div>
+                    <div class="section-label" data-i18n="date">DATE</div>
+                    <div class="date-value" data-i18n="date-value">24 JANUARY 2026</div>
+                    <div class="time-value"><span data-i18n="at">AT</span> <span data-i18n="time-value">06:30 PM</span></div>
                 </div>
 
                 <div class="venue-section">
-                    <div class="section-label">VENUE</div>
-                    <div class="venue-name">LẠC THÁI RESTAURANT</div>
-                    <div class="venue-details">
+                    <div class="section-label" data-i18n="venue">VENUE</div>
+                    <div class="venue-name" data-i18n="venue-name">LẠC THÁI RESTAURANT</div>
+                    <div class="venue-details" data-i18n-html="venue-details">
                         48 Xuân Thuỷ Street<br />
                         An Khánh Ward<br />
                         Ho Chi Minh City
                     </div>
                 </div>
 
-                <button class="save-image-btn" id="saveImageBtn">
+                <button class="save-image-btn" id="saveImageBtn" data-i18n="save-this-as-image">
                     Save this as Image
                 </button>
             </div>
@@ -91,56 +94,56 @@
         <!-- THIRD PANEL - Dress Code Summary -->
         <div class="panel panel-dress">
             <div class="content">
-                <div class="dress-header">Dress Code</div>
-                <div class="dress-subtitle">White · Pink · Blue · Soft Navy</div>
+                <div class="dress-header" data-i18n="dress-code">Dress Code</div>
+                <div class="dress-subtitle" data-i18n="white-pink-blue-soft-navy">White · Pink · Blue · Soft Navy</div>
 
                 <div class="dress-palette">
                     <div class="dress-chip">
                         <span class="dress-dot white-main"></span>
-                        White
+                        <span data-i18n="white">White</span>
                     </div>
                     <div class="dress-chip">
                         <span class="dress-dot white-ivory"></span>
-                        Ivory
+                        <span data-i18n="ivory">Ivory</span>
                     </div>
                     <div class="dress-chip">
                         <span class="dress-dot sage-green"></span>
-                        Sage Green
+                        <span data-i18n="sage-green">Sage Green</span>
                     </div>
                     <div class="dress-chip">
                         <span class="dress-dot pink-light"></span>
-                        Light Pink
+                        <span data-i18n="light-pink">Light Pink</span>
                     </div>
                     <div class="dress-chip">
                         <span class="dress-dot pink-blush"></span>
-                        Blush Pink
+                        <span data-i18n="blush-pink">Blush Pink</span>
                     </div>
                     <div class="dress-chip">
                         <span class="dress-dot blue-light"></span>
-                        Light Blue
+                        <span data-i18n="light-blue">Light Blue</span>
                     </div>
                     <div class="dress-chip">
                         <span class="dress-dot blue-powder"></span>
-                        Powder Blue
+                        <span data-i18n="powder-blue">Powder Blue</span>
                     </div>
                     <div class="dress-chip">
                         <span class="dress-dot blue-dusty"></span>
-                        Dusty Blue
+                        <span data-i18n="dusty-blue">Dusty Blue</span>
                     </div>
                     <div class="dress-chip">
                         <span class="dress-dot navy-soft"></span>
-                        Soft Navy
+                        <span data-i18n="soft-navy">Soft Navy</span>
                     </div>
                 </div>
 
                 <p class="dress-note">
-                    Kindly choose outfits within this palette for a soft, romantic atmosphere.
-                    <strong>Avoid bright neon or very dark colors</strong> outside the navy family.
+                    <span data-i18n="dress-note">Kindly choose outfits within this palette for a soft, romantic atmosphere.</span>
+                    <strong><span data-i18n="dress-note-strong">Avoid bright neon or very dark colors</span></strong> <span data-i18n="dress-note-strong-context">outside the navy family.</span>
                 </p>
 
                 <a class="dress-link" href="./dress.html" target="_blank" rel="noopener">
                     <span class="material-symbols-outlined">palette</span>
-                    View full dress code palette
+                    <span data-i18n="view-full-dress-code-palette">View full dress code palette</span>
                 </a>
 
                 <div class="dress-qr">
@@ -148,7 +151,9 @@
                         <!-- Replace src with your actual registration QR image -->
                         <img src="./assets/images/registration-qr.png" alt="QR code for wedding registration">
                     </div>
-                    <div class="dress-qr-label">Scan for <a href="https://forms.gle/prrod9GbesshN4s76" target="_blank" rel="noopener">registration</a>, please</div>
+                    <div class="dress-qr-label">
+                        <span data-i18n="scan-for-registration">Scan for</span> <a href="https://forms.gle/prrod9GbesshN4s76" target="_blank" rel="noopener" data-i18n="registration">registration</a>, <span data-i18n="please">please</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -157,11 +162,13 @@
     <script>
         document.getElementById('saveImageBtn').addEventListener('click', function() {
             const button = this;
+            const currentLang = window.i18n ? window.i18n.getLanguage() : 'en';
+            const savedText = translations[currentLang] ? translations[currentLang]['saved-this-as-image'] : 'Saved this as Image';
             const originalText = button.innerHTML;
             
             // Show loading state
             button.disabled = true;
-            button.innerHTML = 'Saved this as Image';
+            button.innerHTML = savedText;
             
             const invitationContainer = document.querySelector('.invitation-container');
             
