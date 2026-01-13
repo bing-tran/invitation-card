@@ -80,6 +80,17 @@ vercel --prod
 4. Select folder: `/ (root)`
 5. Save and your site will be available at `https://username.github.io/repository-name`
 
+# Azure Storage Static Web
+1. Create storage account
+2. Go to storage account on Azure portal, open menu Static website, then Enbale Static Website, name index and error page (usually index.html and error.html)
+3. Open menu Container, open $web, then upload or static material (must include index.html)
+4. Open menu Front Door and CDN, create new Azure Front Door instance
+5. Open Front Door on Azure Portal, open Domains menu to config cutom domain
+6. Each custom domain (e.g: binganh.one) must gen TXT record then goto your DNS Management to create TXT and CNAM record to map domain (some domain can create A recored to point statice webstei to root domain)
+7. Waiting for Azure validate DNS record then checking online site
+8. For godaddy, you can config Forwarding rules to force redirect b/w domains.
+
+
 ### Other Static Hosts
 
 You can also deploy to:
